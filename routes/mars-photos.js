@@ -5,10 +5,13 @@ const { MARS_PHOTOS_URL } = require('../config');
 
 // External API call
 const getPhotos = (sol, camera) => {
-   return axios.get(MARS_PHOTOS_URL, {params: {sol, camera}, headers: {
-    'Access-Control-Allow-Origin': '*',
-    'Content-Type': 'application/json',
-  }})
+   return axios.get(MARS_PHOTOS_URL, {
+    params: {sol, camera}, 
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Content-Type': 'application/json',
+    }
+  })
 }
 
 // Get by sol and any camera
