@@ -14,6 +14,12 @@ const getPhotos = (sol, camera) => {
   })
 }
 
+// Get status
+router.get('/status', async function(req, res, next){ 
+
+  res.json('working');
+})
+
 // Get by sol and any camera
 router.get('/:sol', async function(req, res, next){ 
   let sol = req.params.sol;
