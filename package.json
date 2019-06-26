@@ -3,8 +3,8 @@
     "version": "0.1.0",
     "main": "server.js",
     "scripts": {
-        "start": "nodemon server.js",
-        "server": "nodemon server.js",
+        "start": "node server.js",
+        "server": "node server.js",
         "test": "mocha --exit --timeout 10000"
     },
     "keywords": [],
